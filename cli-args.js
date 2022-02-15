@@ -81,7 +81,7 @@ module.exports = async (ISA_ADDR, args) => {
     const watched_courses = coursesIdArg.split(',')
     watched_courses.forEach(id => {
         if (courses.hasOwnProperty(id))
-            console.log(`Watching ${courses[id].text}`)
+            console.log(`Watching ${courses[id].text}, id ${id}`)
         else
             console.warn(`Warning: can not find course with the id ${id}`)
     })
